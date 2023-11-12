@@ -305,6 +305,7 @@ class Story < ApplicationRecord
       { :description => :markeddown_description },
       :comments_url,
       { :submitter_user => :user },
+      :user_is_author,
       { :tags => self.tags.map(&:tag).sort },
     ]
 
